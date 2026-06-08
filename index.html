@@ -58,6 +58,11 @@
   </div>
 
   <script type="module">
+    const SUPABASE_URL = 'https://.supabase.co'
+    const SUPABASE_ANON_KEY = '..-'
+    const POST_SLUG = 'pagina-principal' // slug do post na tabela posts
+
+    const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
         
     // Gera um ID único por visitante e salva no localStorage
     let visitorId = localStorage.getItem('visitor_id')
